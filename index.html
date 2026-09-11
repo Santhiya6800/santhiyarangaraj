@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Santhiya Rangaraj — SEO Executive | Search, Rank, Grow, Convert</title>
+<meta name="description" content="Santhiya Rangaraj is an SEO Executive with 1 year of experience managing 18+ websites and 12+ client projects across On-Page, Technical, Local SEO, AEO and GEO.">
+<link rel="canonical" href="https://example.com/santhiya-rangaraj">
+<meta property="og:title" content="Santhiya Rangaraj — SEO Executive">
+<meta property="og:description" content="I turn search intent into visibility, traffic and growth.">
+<meta property="og:type" content="profile">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Santhiya Rangaraj",
+  "jobTitle": "SEO Executive",
+  "email": "mailto:santhiya6800@gmail.com",
+  "telephone": "+91-8438931471",
+  "url": "https://example.com/santhiya-rangaraj",
+  "sameAs": [
+    "https://linkedin.com/in/santhiya-rangaraj",
+    "https://github.com/Santhiya6800"
+  ],
+  "address": { "@type": "PostalAddress", "addressRegion": "Tamil Nadu", "addressCountry": "IN" }
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<style>
+:root{
+  --bg:#0A0C10;
+  --bg-raised:#12151B;
+  --ink:#F3F1EA;
+  --ink-dim:#9CA3AF;
+  --gold:#D9A94E;
+  --gold-soft:rgba(217,169,78,0.14);
+  --line:rgba(243,241,234,0.10);
+  --serif:'Fraunces', serif;
+  --sans:'Inter', sans-serif;
+  --mono:'JetBrains Mono', monospace;
+  --ease:cubic-bezier(.22,1,.36,1);
+}
+*{box-sizing:border-box; margin:0; padding:0;}
+html{scroll-behavior:smooth;}
+body{
+  background:var(--bg); color:var(--ink); font-family:var(--sans);
+  overflow-x:hidden; line-height:1.5;
+}
+a{color:inherit; text-decoration:none;}
+img{max-width:100%; display:block;}
+::selection{background:var(--gold); color:#0A0C10;}
+:focus-visible{outline:2px solid var(--gold); outline-offset:3px;}
+
+.wrap{max-width:1180px; margin:0 auto; padding:0 32px;}
+@media (max-width:640px){.wrap{padding:0 20px;}}
+
+h1,h2,h3{font-family:var(--serif); font-weight:600; letter-spacing:-0.01em;}
+.eyebrow{font-family:var(--mono); font-size:0.72rem; color:var(--gold); letter-spacing:0.04em;}
+
+/* ---------- NAV ---------- */
+.nav{
+  position:fixed; top:0; left:0; right:0; z-index:200;
+  background:rgba(10,12,16,0.72); backdrop-filter:blur(14px);
+  border-bottom:1px solid var(--line);
+}
+.nav-inner{
+  max-width:1180px; margin:0 auto; padding:16px 32px;
+  display:flex; align-items:center; justify-content:space-between;
+}
+.nav-name{font-family:var(--serif); font-size:1.05rem; font-weight:600;}
+.nav-links{display:flex; gap:28px; list-style:none;}
+.nav-links a{font-size:0.88rem; color:var(--ink-dim); transition:color .25s var(--ease);}
+.nav-links a:hover{color:var(--ink);}
+.nav-progress{
+  font-family:var(--mono); font-size:0.65rem; color:var(--ink-dim);
+  display:flex; gap:6px; align-items:center;
+}
+.nav-progress span{opacity:0.35; transition:opacity .4s var(--ease), color .4s var(--ease);}
+.nav-progress span.active{opacity:1; color:var(--gold);}
+.nav-progress .sep{opacity:0.25;}
+@media (max-width:820px){.nav-links,.nav-progress{display:none;}}
+
+/* ---------- MASCOT (persistent) ---------- */
+.mascot{
+  position:fixed; left:22px; bottom:22px; z-index:150;
+  width:92px; opacity:0; transform:translateY(20px) scale(0.9);
+  transition:opacity .6s var(--ease), transform .6s var(--ease);
+  pointer-events:none;
+}
+.mascot.show{opacity:1; transform:translateY(0) scale(1);}
+.mascot img{
+  width:100%; filter:drop-shadow(0 12px 24px rgba(0,0,0,0.5));
+  animation:mascot-idle 4.5s ease-in-out infinite;
+}
+.mascot-tag{
+  font-family:var(--mono); font-size:0.62rem; color:var(--gold);
+  background:rgba(10,12,16,0.85); border:1px solid var(--line);
+  padding:4px 8px; border-radius:20px; margin-top:6px; text-align:center;
+  opacity:0; transform:translateY(4px); transition:all .4s var(--ease);
+}
+.mascot.show .mascot-tag{opacity:1; transform:translateY(0);}
+@keyframes mascot-idle{
+  0%,100%{transform:translateY(0) rotate(0deg);}
+  50%{transform:translateY(-8px) rotate(-1deg);}
+}
+@media (max-width:640px){.mascot{width:64px; left:14px; bottom:14px;}}
+
+/* ---------- HERO ---------- */
+.hero{
+  position:relative; min-height:100vh; display:flex; align-items:center;
+  padding-top:80px; overflow:hidden;
+}
+.hero-grid{
+  display:grid; grid-template-columns:1.1fr 0.9fr; gap:40px; align-items:center;
+  width:100%;
+}
+@media (max-width:900px){.hero-grid{grid-template-columns:1fr; text-align:center;}}
+.hero-eyebrow{margin-bottom:18px;}
+.hero h1{font-size:clamp(2.6rem,6vw,4.4rem); line-height:1.03; margin-bottom:18px;}
+.hero h1 em{font-style:italic; color:var(--gold); font-weight:500;}
+.hero-line{
+  font-size:1.15rem; color:var(--ink-dim); max-width:480px; margin-bottom:32px;
+}
+@media (max-width:900px){.hero-line{margin-left:auto; margin-right:auto;}}
+.hero-cta{display:flex; gap:14px; margin-bottom:44px;}
+@media (max-width:900px){.hero-cta{justify-content:center; flex-wrap:wrap;}}
+.btn{
+  font-family:var(--sans); font-size:0.92rem; font-weight:600; padding:13px 26px;
+  border-radius:2px; cursor:pointer; transition:all .3s var(--ease); border:1px solid transparent;
+  display:inline-block;
+}
+.btn-primary{background:var(--gold); color:#0A0C10;}
+.btn-primary:hover{background:#e8bc6a; transform:translateY(-2px);}
+.btn-ghost{border-color:var(--line); color:var(--ink);}
+.btn-ghost:hover{border-color:var(--gold); color:var(--gold);}
+.hero-stats{display:flex; gap:34px; flex-wrap:wrap;}
+@media (max-width:900px){.hero-stats{justify-content:center;}}
+.stat b{font-family:var(--serif); font-size:1.6rem; color:var(--gold); display:block;}
+.stat span{font-size:0.78rem; color:var(--ink-dim);}
+
+.hero-stage{
+  position:relative; height:520px;
+}
+.stage-google{
+  position:absolute; top:50%; right:0; transform:translateY(-50%);
+  width:340px; opacity:0.9;
+}
+.stage-google img{width:100%; filter:drop-shadow(0 0 60px rgba(217,169,78,0.18));}
+.stage-character{
+  position:absolute; left:38%; top:50%; transform:translate(-50%,-50%);
+  width:230px; z-index:5;
+}
+.stage-character img{
+  width:100%; filter:drop-shadow(0 20px 40px rgba(0,0,0,0.55));
+  animation:char-breathe 3.6s ease-in-out infinite;
+}
+@keyframes char-breathe{
+  0%,100%{transform:translateY(0) scale(1);}
+  50%{transform:translateY(-10px) scale(1.015);}
+}
+@media (max-width:900px){.hero-stage{height:340px; margin-top:20px;}
+  .stage-google{width:220px;} .stage-character{width:150px;}}
+
+.scroll-cue{
+  position:absolute; bottom:26px; left:50%; transform:translateX(-50%);
+  font-family:var(--mono); font-size:0.65rem; color:var(--ink-dim);
+  display:flex; flex-direction:column; align-items:center; gap:8px;
+}
+.scroll-cue .line{width:1px; height:34px; background:linear-gradient(var(--gold),transparent); animation:cue 1.8s infinite;}
+@keyframes cue{0%{opacity:0.2;}50%{opacity:1;}100%{opacity:0.2;}}
+
+/* ---------- GOOGLE DIVE SECTION ---------- */
+.dive-section{
+  position:relative; height:340vh;
+}
+.dive-pin{
+  position:sticky; top:0; height:100vh; overflow:hidden;
+  display:flex; align-items:center; justify-content:center;
+}
+.dive-bg{
+  position:absolute; inset:0;
+  background:radial-gradient(ellipse at center, rgba(217,169,78,0.10), transparent 60%);
+}
+.dive-google-wrap{
+  position:absolute; width:600px; max-width:80vw;
+}
+.dive-google-wrap img{width:100%;}
+.dive-character-wrap{
+  position:absolute; width:220px; z-index:8;
+}
+.dive-character-wrap img{width:100%; filter:drop-shadow(0 20px 40px rgba(0,0,0,0.6));}
+.dive-searchbar{
+  position:absolute; top:52%; left:50%; transform:translate(-50%,-50%) scale(0.9);
+  width:520px; max-width:82vw; opacity:0;
+  background:#1A1D24; border:1px solid var(--line); border-radius:28px;
+  padding:16px 24px; display:flex; align-items:center; gap:12px;
+  font-family:var(--sans); font-size:0.95rem; color:var(--ink-dim);
+}
+.dive-searchbar .dot{width:9px; height:9px; border-radius:50%; background:var(--gold);}
+.dive-results{
+  position:absolute; top:66%; left:50%; transform:translateX(-50%);
+  width:520px; max-width:82vw; display:flex; flex-wrap:wrap; gap:10px; justify-content:center;
+}
+.dive-result-chip{
+  font-family:var(--mono); font-size:0.72rem; padding:7px 14px; border-radius:20px;
+  border:1px solid var(--line); background:rgba(217,169,78,0.06); color:var(--ink-dim);
+  opacity:0; transform:translateY(10px);
+}
+.dive-stages{
+  position:absolute; bottom:12%; left:50%; transform:translateX(-50%);
+  display:flex; gap:44px;
+}
+.dive-stage{
+  font-family:var(--mono); font-size:0.8rem; color:var(--ink-dim); opacity:0.25;
+  display:flex; flex-direction:column; align-items:center; gap:8px; transition:opacity .3s;
+}
+.dive-stage.on{opacity:1; color:var(--gold);}
+.dive-stage .icon{
+  width:44px; height:44px; border-radius:50%; border:1px solid var(--line);
+  display:flex; align-items:center; justify-content:center; font-size:1.1rem;
+}
+.dive-stage.on .icon{border-color:var(--gold); box-shadow:0 0 22px rgba(217,169,78,0.35);}
+@media (max-width:700px){.dive-stages{gap:20px;} .dive-stage{font-size:0.65rem;} .dive-stage .icon{width:34px;height:34px;}}
+
+/* ---------- SECTION SHELL ---------- */
+section.block{padding:120px 0; position:relative;}
+@media (max-width:640px){section.block{padding:80px 0;}}
+.block-head{max-width:640px; margin-bottom:56px;}
+.block-head h2{font-size:clamp(1.9rem,3.6vw,2.7rem); margin-top:10px;}
+.block-head p{color:var(--ink-dim); margin-top:14px; font-size:1.02rem;}
+
+/* ---------- ABOUT ---------- */
+.about-grid{display:grid; grid-template-columns:1fr 1fr; gap:60px; align-items:center;}
+@media (max-width:900px){.about-grid{grid-template-columns:1fr; gap:32px;}}
+.about-copy p{color:var(--ink-dim); margin-bottom:18px; font-size:1.02rem;}
+.about-facts{
+  display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-top:28px;
+}
+.fact{border-left:2px solid var(--gold); padding-left:12px;}
+.fact b{display:block; font-family:var(--serif); font-size:1rem;}
+.fact span{font-size:0.78rem; color:var(--ink-dim);}
+.about-visual{
+  position:relative; display:flex; align-items:center; justify-content:center;
+}
+.about-visual img{width:260px; filter:drop-shadow(0 24px 50px rgba(0,0,0,0.5));}
+.about-visual .ring{
+  position:absolute; width:340px; height:340px; border:1px dashed var(--line); border-radius:50%;
+  animation:spin 40s linear infinite;
+}
+@keyframes spin{to{transform:rotate(360deg);}}
+
+/* ---------- SEO UNIVERSE / SKILLS ---------- */
+.universe{position:relative; min-height:420px;}
+.skill-groups{display:grid; grid-template-columns:repeat(5,1fr); gap:16px;}
+@media (max-width:980px){.skill-groups{grid-template-columns:repeat(2,1fr);}}
+@media (max-width:560px){.skill-groups{grid-template-columns:1fr;}}
+.skill-card{
+  background:var(--bg-raised); border:1px solid var(--line); border-radius:4px;
+  padding:22px 18px; transition:transform .35s var(--ease), border-color .35s var(--ease), box-shadow .35s var(--ease);
+}
+.skill-card:hover{transform:translateY(-6px); border-color:rgba(217,169,78,0.4); box-shadow:0 18px 40px rgba(0,0,0,0.35);}
+.skill-card h3{font-size:0.72rem; font-family:var(--mono); color:var(--gold); letter-spacing:0.03em; margin-bottom:14px; text-transform:uppercase;}
+.skill-card ul{list-style:none; display:flex; flex-direction:column; gap:9px;}
+.skill-card li{font-size:0.87rem; color:var(--ink-dim); position:relative; padding-left:14px;}
+.skill-card li::before{content:'—'; position:absolute; left:0; color:var(--gold); opacity:0.6;}
+
+/* ---------- EXPERIENCE TIMELINE ---------- */
+.timeline{position:relative; padding-left:32px; border-left:1px solid var(--line);}
+.tl-item{position:relative; padding-bottom:52px;}
+.tl-item:last-child{padding-bottom:0;}
+.tl-dot{
+  position:absolute; left:-38px; top:4px; width:12px; height:12px; border-radius:50%;
+  background:var(--bg); border:2px solid var(--gold);
+}
+.tl-item h3{font-size:1.2rem; margin-bottom:4px;}
+.tl-meta{font-family:var(--mono); font-size:0.75rem; color:var(--gold); margin-bottom:14px; display:block;}
+.tl-item ul{list-style:none; display:flex; flex-direction:column; gap:8px;}
+.tl-item li{font-size:0.92rem; color:var(--ink-dim); padding-left:16px; position:relative;}
+.tl-item li::before{content:'▸'; position:absolute; left:0; color:var(--gold); font-size:0.7rem; top:3px;}
+
+/* ---------- PROCESS ---------- */
+.process-list{display:flex; flex-direction:column; border-top:1px solid var(--line);}
+.process-row{
+  display:grid; grid-template-columns:70px 1fr; gap:20px; padding:22px 0;
+  border-bottom:1px solid var(--line); align-items:baseline;
+}
+.process-row .num{font-family:var(--mono); color:var(--gold); font-size:0.85rem;}
+.process-row h3{font-size:1.05rem; font-weight:600; font-family:var(--sans);}
+.process-row p{color:var(--ink-dim); font-size:0.88rem; margin-top:4px;}
+
+/* ---------- TOOLS ---------- */
+.tools-grid{display:flex; flex-wrap:wrap; gap:14px;}
+.tool-chip{
+  font-family:var(--mono); font-size:0.82rem; padding:11px 18px; border:1px solid var(--line);
+  border-radius:30px; color:var(--ink-dim); transition:all .3s var(--ease); background:var(--bg-raised);
+}
+.tool-chip:hover{border-color:var(--gold); color:var(--gold); transform:translateY(-3px);}
+
+/* ---------- CASE STUDIES ---------- */
+.case-grid{display:grid; grid-template-columns:repeat(2,1fr); gap:22px;}
+@media (max-width:820px){.case-grid{grid-template-columns:1fr;}}
+.case-card{
+  background:var(--bg-raised); border:1px solid var(--line); border-radius:4px; padding:26px;
+}
+.case-top{display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:14px;}
+.case-top .emoji{font-size:1.6rem;}
+.case-industry{font-family:var(--mono); font-size:0.68rem; color:var(--gold); text-transform:uppercase;}
+.case-card h3{font-size:1.08rem; margin:6px 0 12px;}
+.case-card p{color:var(--ink-dim); font-size:0.88rem; margin-bottom:10px;}
+.case-tags{display:flex; gap:8px; flex-wrap:wrap; margin-top:14px;}
+.case-tags span{font-family:var(--mono); font-size:0.66rem; padding:4px 10px; border:1px solid var(--line); border-radius:20px; color:var(--ink-dim);}
+.case-graph{margin-top:16px; height:60px;}
+.case-graph svg path{stroke:var(--gold); stroke-width:2; fill:none;}
+.case-graph .draw{stroke-dasharray:300; stroke-dashoffset:300; transition:stroke-dashoffset 1.4s var(--ease);}
+.case-graph .draw.on{stroke-dashoffset:0;}
+
+.tech-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:22px; margin-top:60px;}
+@media (max-width:820px){.tech-grid{grid-template-columns:1fr;}}
+.tech-card{border:1px solid var(--line); border-radius:4px; padding:24px; background:var(--bg-raised);}
+.tech-card .emoji{font-size:1.6rem; margin-bottom:12px; display:block;}
+.tech-card h3{font-size:1.02rem; margin-bottom:8px;}
+.tech-card p{color:var(--ink-dim); font-size:0.87rem;}
+
+/* ---------- FINAL / CONTACT ---------- */
+.final{
+  text-align:center; padding:150px 0 100px; position:relative;
+}
+.final h2{font-size:clamp(2.2rem,5vw,3.4rem); margin-bottom:16px;}
+.final p{color:var(--ink-dim); max-width:460px; margin:0 auto 36px; font-size:1.05rem;}
+.final-cta{display:flex; gap:14px; justify-content:center; margin-bottom:56px; flex-wrap:wrap;}
+.contact-row{display:flex; justify-content:center; gap:36px; flex-wrap:wrap; font-size:0.9rem; color:var(--ink-dim);}
+.contact-row a:hover{color:var(--gold);}
+.final-character{width:150px; margin:0 auto 30px;}
+.final-character img{width:100%; filter:drop-shadow(0 20px 40px rgba(0,0,0,0.5));}
+
+footer{border-top:1px solid var(--line); padding:28px 0; text-align:center; color:var(--ink-dim); font-size:0.8rem;}
+
+/* reduced motion */
+@media (prefers-reduced-motion: reduce){
+  *{animation-duration:0.001ms !important; animation-iteration-count:1 !important; transition-duration:0.15s !important; scroll-behavior:auto !important;}
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner wrap" style="padding-left:0;padding-right:0;">
+    <a href="#hero" class="nav-name">Santhiya Rangaraj</a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#process">Process</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-progress" id="navProgress">
+      <span data-stage="0">SEARCH</span><span class="sep">/</span>
+      <span data-stage="1">RANK</span><span class="sep">/</span>
+      <span data-stage="2">GROW</span><span class="sep">/</span>
+      <span data-stage="3">CONVERT</span>
+    </div>
+  </div>
+</nav>
+
+<div class="mascot" id="mascot">
+  <img src="assets/character.png" alt="Santhiya's illustrated character, her recurring portfolio guide" id="mascotImg">
+  <div class="mascot-tag" id="mascotTag">Hi, I'm here to walk you through it</div>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="eyebrow hero-eyebrow">SEO EXECUTIVE · TAMIL NADU, INDIA</div>
+      <h1>I turn search intent<br>into <em>visibility</em>,<br>traffic and growth.</h1>
+      <p class="hero-line">1 year driving organic growth across 18+ websites and 12+ client projects — from technical audits to AEO and GEO strategy.</p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="#contact" class="btn btn-ghost">Download Resume</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><b>18+</b><span>Websites</span></div>
+        <div class="stat"><b>12+</b><span>Client Projects</span></div>
+        <div class="stat"><b>1 Yr</b><span>Experience</span></div>
+        <div class="stat"><b>3</b><span>Tech Projects</span></div>
+      </div>
+    </div>
+    <div class="hero-stage">
+      <div class="stage-google"><img src="assets/google-logo.png" alt="Google search, the world Santhiya works within every day"></div>
+      <div class="stage-character"><img src="assets/character.png" alt="Illustrated portrait of Santhiya Rangaraj"></div>
+    </div>
+  </div>
+  <div class="scroll-cue"><span>SCROLL TO ENTER SEARCH</span><div class="line"></div></div>
+</section>
+
+<!-- GOOGLE DIVE -->
+<section class="dive-section" id="dive">
+  <div class="dive-pin">
+    <div class="dive-bg"></div>
+    <div class="dive-google-wrap" id="diveGoogle"><img src="assets/google-logo.png" alt="Google logo, growing as Santhiya's world of search"></div>
+    <div class="dive-character-wrap" id="diveCharacter"><img src="assets/character.png" alt="Santhiya's character moving toward the search world"></div>
+    <div class="dive-searchbar" id="diveSearchbar">
+      <span class="dot"></span> Santhiya Rangaraj SEO Executive
+    </div>
+    <div class="dive-results" id="diveResults">
+      <span class="dive-result-chip">SEO Executive</span>
+      <span class="dive-result-chip">SEO Specialist</span>
+      <span class="dive-result-chip">Search Engine Optimization</span>
+      <span class="dive-result-chip">Organic Growth</span>
+      <span class="dive-result-chip">Technical SEO</span>
+      <span class="dive-result-chip">Content Strategy</span>
+    </div>
+    <div class="dive-stages" id="diveStages">
+      <div class="dive-stage" data-stage="0"><div class="icon">🔍</div>SEARCH</div>
+      <div class="dive-stage" data-stage="1"><div class="icon">📈</div>RANK</div>
+      <div class="dive-stage" data-stage="2"><div class="icon">🚦</div>TRAFFIC</div>
+      <div class="dive-stage" data-stage="3"><div class="icon">✅</div>CONVERT</div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="block" id="about">
+  <div class="wrap">
+    <div class="about-grid">
+      <div class="about-copy">
+        <div class="eyebrow">ABOUT</div>
+        <h2>More than rankings.</h2>
+        <p>Results-driven SEO Executive with 1 year of professional experience managing 18+ websites and 12+ client projects across Clothing, Apparel, Healthcare, Education, eCommerce, and US-based brands. Specialized in On-Page, Technical, Off-Page, and Local SEO, plus AEO and GEO — staying ahead as search itself evolves with AI.</p>
+        <p>Alongside SEO, she's actively building development skills in HTML, CSS and JavaScript, and exploring AI-based projects. She sits at the intersection of marketing and engineering, also bringing performance marketing, content and social media skills to the table.</p>
+        <div class="about-facts">
+          <div class="fact"><b>Tamil Nadu, India</b><span>Based & working remotely</span></div>
+          <div class="fact"><b>CGPA 8.9</b><span>B.E. Computer Science</span></div>
+          <div class="fact"><b>4 Internships</b><span>Marketing, dev & data foundation</span></div>
+          <div class="fact"><b>Membership Chair</b><span>Rotaract Club</span></div>
+        </div>
+      </div>
+      <div class="about-visual">
+        <div class="ring"></div>
+        <img src="assets/character.png" alt="Santhiya standing, illustrated character">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section class="block" id="skills">
+  <div class="wrap">
+    <div class="block-head">
+      <div class="eyebrow">SKILLS</div>
+      <h2>An SEO ecosystem, not a checklist.</h2>
+      <p>Five interconnected disciplines — strategy, content, analytics, platforms and paid — that work together on every project.</p>
+    </div>
+    <div class="skill-groups">
+      <div class="skill-card"><h3>SEO</h3><ul>
+        <li>On-Page SEO</li><li>Technical SEO</li><li>Off-Page SEO</li><li>Local SEO</li><li>Keyword Research</li>
+      </ul></div>
+      <div class="skill-card"><h3>Content</h3><ul>
+        <li>Content Strategy</li><li>SEO Content Writing</li><li>AEO</li><li>GEO</li><li>Search Intent</li>
+      </ul></div>
+      <div class="skill-card"><h3>Analytics</h3><ul>
+        <li>Google Search Console</li><li>GA4</li><li>Microsoft Clarity</li><li>SEMrush</li>
+      </ul></div>
+      <div class="skill-card"><h3>CMS / Platforms</h3><ul>
+        <li>WordPress</li><li>Shopify</li><li>Google Business Profile</li><li>HTML / CSS / JS</li>
+      </ul></div>
+      <div class="skill-card"><h3>Ads</h3><ul>
+        <li>Google Ads</li><li>Meta Ads</li><li>Campaign Optimization</li><li>Audience Targeting</li>
+      </ul></div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section class="block" id="experience">
+  <div class="wrap">
+    <div class="block-head">
+      <div class="eyebrow">EXPERIENCE</div>
+      <h2>The journey through search.</h2>
+    </div>
+    <div class="timeline">
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <h3>SEO Executive</h3>
+        <span class="tl-meta">BioWeal Products Private Limited</span>
+        <ul>
+          <li>Owned complete SEO strategy: on-page, off-page, technical, local</li>
+          <li>Wrote SEO blogs, landing pages and product descriptions</li>
+          <li>Implemented schema markup, meta optimization, internal linking, image SEO</li>
+          <li>Ran Google Ads campaigns and supported Meta Ads</li>
+          <li>Planned social calendars, designed posters, edited marketing videos</li>
+          <li>Tracked results via SEMrush, GA4, GSC and Microsoft Clarity</li>
+        </ul>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <h3>SEO Executive</h3>
+        <span class="tl-meta">Rinteger</span>
+        <ul>
+          <li>Managed 12+ SEO projects across Clothing, Schools, Hospitals, eCommerce and US-based brands</li>
+          <li>Delivered on-page, off-page, technical and local SEO plus AEO & GEO strategy</li>
+          <li>Conducted keyword research, competitor and content-gap analysis</li>
+          <li>Built quality backlinks; partnered with developers on technical fixes</li>
+        </ul>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <h3>Internships — Foundation Years</h3>
+        <span class="tl-meta">NextOne · Weblogicks · Accent Techno Soft · Rinteger</span>
+        <ul>
+          <li>Digital Marketing Intern, Full Stack Intern, Data Analyst Intern, SEO Specialist Intern</li>
+          <li>Four internships across marketing, full-stack dev and data analysis built a well-rounded foundation before stepping into SEO Executive roles</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="block" id="process">
+  <div class="wrap">
+    <div class="block-head">
+      <div class="eyebrow">PROCESS</div>
+      <h2>How I approach SEO.</h2>
+    </div>
+    <div class="process-list">
+      <div class="process-row"><span class="num">01</span><div><h3>Understand the business</h3><p>What the client actually sells, and to whom.</p></div></div>
+      <div class="process-row"><span class="num">02</span><div><h3>Research search intent</h3><p>What people are really asking Google for.</p></div></div>
+      <div class="process-row"><span class="num">03</span><div><h3>Keyword research</h3><p>Mapping demand to content that can win it.</p></div></div>
+      <div class="process-row"><span class="num">04</span><div><h3>Technical audit</h3><p>Fixing what's silently blocking rankings.</p></div></div>
+      <div class="process-row"><span class="num">05</span><div><h3>On-page optimization</h3><p>Titles, structure, schema, internal links.</p></div></div>
+      <div class="process-row"><span class="num">06</span><div><h3>Content strategy</h3><p>Building pages worth ranking and reading.</p></div></div>
+      <div class="process-row"><span class="num">07</span><div><h3>Authority building</h3><p>Earning the links and signals that matter.</p></div></div>
+      <div class="process-row"><span class="num">08</span><div><h3>Measure & improve</h3><p>Watching the data, then doing it again, better.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- TOOLS -->
+<section class="block" id="tools">
+  <div class="wrap">
+    <div class="block-head">
+      <div class="eyebrow">TOOLS</div>
+      <h2>What's in the toolkit.</h2>
+    </div>
+    <div class="tools-grid">
+      <span class="tool-chip">Google Search Console</span>
+      <span class="tool-chip">Google Analytics 4</span>
+      <span class="tool-chip">SEMrush</span>
+      <span class="tool-chip">Microsoft Clarity</span>
+      <span class="tool-chip">Google Business Profile</span>
+      <span class="tool-chip">WordPress</span>
+      <span class="tool-chip">Shopify</span>
+      <span class="tool-chip">Google Ads</span>
+      <span class="tool-chip">Meta Ads</span>
+      <span class="tool-chip">Canva</span>
+      <span class="tool-chip">Yoast SEO</span>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS / CASE STUDIES -->
+<section class="block" id="projects">
+  <div class="wrap">
+    <div class="block-head">
+      <div class="eyebrow">CASE STUDIES</div>
+      <h2>SEO in action.</h2>
+      <p>Anonymized client work across industries — real strategies, real work, results described qualitatively where exact figures aren't public.</p>
+    </div>
+    <div class="case-grid">
+
+      <div class="case-card">
+        <div class="case-top"><span class="emoji">☕</span><span class="case-industry">Café / Beverage</span></div>
+        <h3>Hyperlocal visibility for a neighbourhood café</h3>
+        <p>Focused on hyperlocal intent — optimized for "near me" searches and Google Business signals to convert local search traffic into footfall. Improved on-page structure, internal linking and meta content.</p>
+        <div class="case-graph"><svg viewBox="0 0 300 60" preserveAspectRatio="none"><path class="draw" d="M0,50 C60,48 100,35 150,30 C200,25 250,10 300,8"/></svg></div>
+        <div class="case-tags"><span>Local SEO</span><span>On-Page SEO</span><span>Visibility Growth</span></div>
+      </div>
+
+      <div class="case-card">
+        <div class="case-top"><span class="emoji">🧵</span><span class="case-industry">Fashion / Tailoring</span></div>
+        <h3>Category-page SEO for a tailoring brand</h3>
+        <p>Optimized service and category pages with a focused keyword targeting strategy, refined metadata and improved content relevance to lift organic reach.</p>
+        <div class="case-graph"><svg viewBox="0 0 300 60" preserveAspectRatio="none"><path class="draw" d="M0,52 C50,50 90,40 140,32 C190,24 240,18 300,12"/></svg></div>
+        <div class="case-tags"><span>Service SEO</span><span>Organic Growth</span><span>Content Optimization</span></div>
+      </div>
+
+      <div class="case-card">
+        <div class="case-top"><span class="emoji">💄</span><span class="case-industry">Skincare / Beauty</span></div>
+        <h3>Blog-led growth for a beauty brand</h3>
+        <p>Built a blog-focused keyword strategy and improved page-level SEO elements, planning topical content to strengthen search positioning for content pages.</p>
+        <div class="case-graph"><svg viewBox="0 0 300 60" preserveAspectRatio="none"><path class="draw" d="M0,48 C60,45 110,38 160,28 C210,20 260,14 300,10"/></svg></div>
+        <div class="case-tags"><span>Blog SEO</span><span>Keyword Strategy</span><span>Content Reach</span></div>
+      </div>
+
+      <div class="case-card">
+        <div class="case-top"><span class="emoji">🎓</span><span class="case-industry">Education / Training</span></div>
+        <h3>SEO audit and content fix for a training platform</h3>
+        <p>Performed a full SEO audit, created keyword mapping for core pages, and improved topic organization to boost discoverability of training content.</p>
+        <div class="case-graph"><svg viewBox="0 0 300 60" preserveAspectRatio="none"><path class="draw" d="M0,50 C55,44 100,36 150,28 C205,20 255,12 300,8"/></svg></div>
+        <div class="case-tags"><span>SEO Audit</span><span>Keyword Mapping</span><span>Search Reach</span></div>
+      </div>
+
+      <div class="case-card">
+        <div class="case-top"><span class="emoji">🍝</span><span class="case-industry">Restaurant / Food</span></div>
+        <h3>Local search presence for a restaurant</h3>
+        <p>Worked on local SEO optimization and Google Business-related visibility, optimizing website content for location-based search performance.</p>
+        <div class="case-graph"><svg viewBox="0 0 300 60" preserveAspectRatio="none"><path class="draw" d="M0,50 C50,48 100,38 150,30 C200,22 250,16 300,10"/></svg></div>
+        <div class="case-tags"><span>Local SEO</span><span>Maps Reach</span><span>Search Growth</span></div>
+      </div>
+
+      <div class="case-card">
+        <div class="case-top"><span class="emoji">🧔</span><span class="case-industry">Men's Grooming</span></div>
+        <h3>Product-page SEO for a grooming brand</h3>
+        <p>Optimized product pages for search visibility, refining content structure and on-page elements to strengthen keyword targeting for products.</p>
+        <div class="case-graph"><svg viewBox="0 0 300 60" preserveAspectRatio="none"><path class="draw" d="M0,52 C55,46 100,38 150,30 C205,22 255,16 300,10"/></svg></div>
+        <div class="case-tags"><span>Product SEO</span><span>Keyword Growth</span><span>Better Ranking</span></div>
+      </div>
+
+      <div class="case-card" style="grid-column:1/-1;">
+        <div class="case-top"><span class="emoji">👔</span><span class="case-industry">Uniform Manufacturing / B2B</span></div>
+        <h3>B2B keyword targeting for a manufacturing business</h3>
+        <p>Worked on B2B keyword targeting strategy and technical SEO improvements, optimizing business pages to improve search visibility and inquiry potential.</p>
+        <div class="case-graph"><svg viewBox="0 0 300 60" preserveAspectRatio="none"><path class="draw" d="M0,50 C60,46 110,36 160,28 C210,20 260,14 300,10"/></svg></div>
+        <div class="case-tags"><span>B2B SEO</span><span>Technical SEO</span><span>Inquiry Growth</span></div>
+      </div>
+
+    </div>
+
+    <div class="tech-grid">
+      <div class="tech-card"><span class="emoji">🚗</span><h3>Driver Drowsiness Detection System</h3><p>Real-time AI-based fatigue detection system that monitors driver alertness patterns and triggers alerts to prevent accidents. Focused on detection accuracy and alert logic.</p></div>
+      <div class="tech-card"><span class="emoji">🦁</span><h3>Wild Animal Detection System</h3><p>AI-based detection and monitoring system built to identify wildlife presence for safety and conservation use cases, with logic for real-time alerts.</p></div>
+      <div class="tech-card"><span class="emoji">💡</span><h3>I Line Xperience</h3><p>UI/UX-focused application emphasizing structured workflow, clean design and user-friendly experience from planning to execution.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT / FINAL -->
+<section class="final" id="contact">
+  <div class="wrap">
+    <div class="final-character"><img src="assets/character.png" alt="Santhiya, pointing toward her contact details"></div>
+    <div class="eyebrow">CONTACT</div>
+    <h2>Ready to rank something new?</h2>
+    <p>Let's build search visibility that actually matters.</p>
+    <div class="final-cta">
+      <a href="#" class="btn btn-primary">View Resume</a>
+      <a href="mailto:santhiya6800@gmail.com" class="btn btn-ghost">Let's Connect</a>
+    </div>
+    <div class="contact-row">
+      <a href="mailto:santhiya6800@gmail.com">santhiya6800@gmail.com</a>
+      <a href="tel:+918438931471">+91 84389 31471</a>
+      <a href="https://linkedin.com/in/santhiya-rangaraj" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/Santhiya6800" target="_blank" rel="noopener">GitHub</a>
+      <span>Tamil Nadu, India</span>
+    </div>
+  </div>
+</section>
+
+<footer>© 2026 Santhiya Rangaraj. All rights reserved.</footer>
+
+<script>
+gsap.registerPlugin(ScrollTrigger);
+const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+/* ---- Mascot show + state per section ---- */
+const mascot = document.getElementById('mascot');
+const mascotTag = document.getElementById('mascotTag');
+const sectionTags = {
+  about: "Standing here — let me tell you about me",
+  skills: "This is my SEO ecosystem",
+  experience: "Walking you through my journey",
+  process: "Here's how I approach SEO",
+  tools: "These are the tools I use daily",
+  projects: "Analysing results with you",
+  contact: "Let's connect — I'm right here"
+};
+Object.keys(sectionTags).forEach(id=>{
+  const el = document.getElementById(id);
+  if(!el) return;
+  ScrollTrigger.create({
+    trigger: el, start:'top center', end:'bottom center',
+    onEnter:()=>{mascot.classList.add('show'); mascotTag.textContent = sectionTags[id];},
+    onEnterBack:()=>{mascot.classList.add('show'); mascotTag.textContent = sectionTags[id];}
+  });
+});
+ScrollTrigger.create({
+  trigger: '#hero', start:'top top', end:'bottom top',
+  onLeave:()=>mascot.classList.add('show'),
+  onEnterBack:()=>mascot.classList.remove('show')
+});
+
+/* ---- Nav progress indicator ---- */
+const navSpans = document.querySelectorAll('#navProgress span[data-stage]');
+ScrollTrigger.create({
+  trigger: document.body, start:'top top', end:'bottom bottom',
+  onUpdate: self=>{
+    const p = self.progress;
+    const idx = Math.min(3, Math.floor(p*4));
+    navSpans.forEach((s,i)=> s.classList.toggle('active', i===idx));
+  }
+});
+
+/* ---- Hero -> Dive cinematic scroll (skipped if reduced motion) ---- */
+if(!reduce){
+  const diveTL = gsap.timeline({
+    scrollTrigger:{
+      trigger:'#dive', start:'top top', end:'bottom bottom', scrub:1
+    }
+  });
+  diveTL
+    .fromTo('#diveCharacter',
+      {left:'30%', top:'40%', width:220, opacity:1, filter:'blur(0px)'},
+      {left:'50%', top:'50%', width:60, opacity:0, filter:'blur(6px)', ease:'power1.in'}, 0)
+    .fromTo('#diveGoogle',
+      {left:'70%', top:'50%', width:280, opacity:0.4, xPercent:-50, yPercent:-50},
+      {left:'50%', top:'46%', width:520, opacity:1, xPercent:-50, yPercent:-50, ease:'power1.inOut'}, 0)
+    .to('#diveSearchbar', {opacity:1, scale:1, duration:0.3}, 0.35)
+    .to('.dive-result-chip', {opacity:1, y:0, stagger:0.05, duration:0.3}, 0.5)
+    .to('#diveSearchbar', {opacity:0, duration:0.2}, 0.75)
+    .to('.dive-result-chip', {opacity:0, duration:0.2}, 0.75);
+
+  // stage highlight 0-3 across last portion of the pin
+  const stages = document.querySelectorAll('.dive-stage');
+  ScrollTrigger.create({
+    trigger:'#dive', start:'top top', end:'bottom bottom', scrub:true,
+    onUpdate: self=>{
+      const p = self.progress;
+      let active = -1;
+      if(p>0.55) active=0;
+      if(p>0.68) active=1;
+      if(p>0.81) active=2;
+      if(p>0.93) active=3;
+      stages.forEach((s,i)=> s.classList.toggle('on', i===active));
+    }
+  });
+} else {
+  document.getElementById('diveGoogle').style.cssText='position:relative;left:0;top:0;width:60%;margin:0 auto;opacity:1;';
+  document.getElementById('diveCharacter').style.display='none';
+  document.getElementById('diveSearchbar').style.opacity='1';
+  document.getElementById('diveSearchbar').style.transform='none';
+  document.querySelectorAll('.dive-result-chip').forEach(c=>{c.style.opacity='1'; c.style.transform='none';});
+}
+
+/* ---- Case study graph draw on view ---- */
+document.querySelectorAll('.case-graph .draw').forEach(path=>{
+  ScrollTrigger.create({
+    trigger: path, start:'top 85%', once:true,
+    onEnter:()=> path.classList.add('on')
+  });
+});
+
+/* ---- Skill / tech card subtle reveal (single orchestrated, not per-card fade default) ---- */
+gsap.from('.skill-card', {
+  opacity:0, y:24, duration:0.6, stagger:0.08, ease:'power2.out',
+  scrollTrigger:{trigger:'.skill-groups', start:'top 80%'}
+});
+gsap.from('.tl-item', {
+  opacity:0, x:-20, duration:0.6, stagger:0.15, ease:'power2.out',
+  scrollTrigger:{trigger:'.timeline', start:'top 75%'}
+});
+</script>
+</body>
+</html>
